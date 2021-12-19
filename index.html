@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+  <title>Its Prime Time</title>
+</head>
+<body>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("prime.swf");
+    });
+</script>
+<script src="ruffle.js"></script>
+</body>
